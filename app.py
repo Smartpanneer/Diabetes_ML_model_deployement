@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the saved model and scaler
-with open('logistic_regression_model.pkl', 'rb') as file:
+with open('Logistic_Regression_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 with open('scaler.pkl', 'rb') as file:
@@ -59,4 +59,5 @@ def predict():
 
 
 if __name__ == '__main__':
+
     app.run(debug=True)

@@ -9,7 +9,7 @@ CORS(app)
 
 # Load model and scaler
 print("Loading ML model and scaler...")
-with open('logistic_regression_model.pkl', 'rb') as f:
+with open('Logistic_Regression_model.pkl', 'rb') as f:
     model = pickle.load(f)
     print("✓ Model loaded")
 
